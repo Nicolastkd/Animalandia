@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{ /*El color del fondo */
+    background-color: rgb(20, 190, 105);
+}
+.navegacion{ /*Nuestro navegador del menu*/
+    width: 1000px;
+    margin: 30px auto;
+    background-color: rgb(253, 253, 253); /*Color del menu*/
+}
+.navegacion ul{ /*Los ul de navegacion, el que se llama menu y submenu*/
+    list-style: none;
+}
+
+.menu >li{ /*Edita el menu de listas li*/
+    position: relative;
+    display: inline-block; 
+}
+.menu >li >a{ /*Esto edita los enlaces del menu de listas a*/
+   display: block;
+   padding: 15px 20px;
+   color: #353535;
+   font font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   text-decoration: none;
+}
+.menu li a:hover{ /*Al pasar el mouse sobre el menu*/
+    color: rgb(23, 209, 94);
+    transition: all .3s;
+}
+
+/*Submenu ahora vamos a editar*/
+.submenu{ /*Edita el submenu literalmente*/
+    position: absolute;
+    width: 120%;
+    background-color: rgb(136, 116, 145);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ; /*Cuando paso el mouse por arriba de gatos o perro, son los segundos que tarda en aparecer el submenu*/
+}
+.submenu li a{/*Editamos el enlace de la lista de submenu*/
+    display: block;
+    padding: 15px;
+    color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+

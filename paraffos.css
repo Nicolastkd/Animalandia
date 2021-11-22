@@ -1,0 +1,178 @@
+html {
+    overflow-x: hidden;
+}
+body {
+    font: 14px "Open Sans";
+    color: #0b121a;
+    background-color: #ece8e5;
+}
+div.columnaCentral {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+#CapaAdsenseFijo{
+    display:none;
+    z-index: 99999;
+}
+h1 {
+    font: 36px "PT Sans";
+    color: #f08000;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    border-bottom: 2px solid #914a0d;
+    font-weight: bold;
+}
+h1.nomargin {
+    margin-bottom: 0;
+    border-bottom: 2px solid #a5a5a500;
+}
+h2,
+.tituloNoSem {
+    font: 30px "PT Sans";
+    color: #f08000;
+    margin: 40px 0px 30px;
+    position: relative;
+    z-index: 0;
+    clear: both;
+    width: 100%;
+    font-weight: bold;
+}
+h2:after,
+.tituloNoSem:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 1px;
+    right: 0;
+    bottom: -3px;
+    z-index: -1;
+    border-bottom: 1px solid #E7E5E5;
+}
+h3,
+h4 {
+    font: 36px "PT Sans";
+    color: #000000;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    border-bottom: 2px solid #e4e4e4;
+    font-weight: bold;
+}
+.contenedor {
+    float: left;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-clip: padding-box;
+    background: #fff;
+    position: relative;
+    padding: 50px 3% 38px;
+    -webkit-box-shadow: 0 10px 32px -8px #a5a5a5;
+    -moz-box-shadow: 0 10px 32px -8px #a5a5a5;
+    box-shadow: 0 10px 32px -8px #a5a5a5;
+    width: 100%
+}
+.contenedor:before {
+    content: "";
+    background-color: #f18000;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+@media only screen and (max-width: 870px) {
+    .contenedor:before {
+        background-color: #914a0d ;
+    }
+}
+
+.contenedor > .contenedorInterior.seccion {
+    overflow: hidden;
+    padding-left: 3%
+}
+
+@media only screen and (max-width: 870px) {
+    .contenedor>.contenedorInterior.seccion {
+        width:100%;
+        padding-left: 0
+    }
+}
+
+.contenedor > .contenedorInterior .contenido {
+    text-align: justify;
+}
+.contenedor > .contenedorInterior .contenido:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+div.resSecContainer {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    text-align: center;
+    overflow: hidden;
+}
+div.resSecContainer > .resSec {
+    max-width: 255px;
+    display: inline-block;
+    padding: 10px;
+    margin: 0 .5% 23px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-color: #ece8e5;
+    -webkit-box-shadow: 1px 1px 8px 0px rgba(89, 89, 89, 0.53);
+    -moz-box-shadow: 1px 1px 8px 0px rgba(89, 89, 89, 0.53);
+    box-shadow: 1px 1px 8px 0px rgba(89, 89, 89, 0.53);
+    /* Bloque sprite */
+    /* Enlace de texto */
+}
+div.resSecContainer > .resSec > a.imgSec {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 235px;
+    height: 141px;
+    text-align: center;
+}
+div.resSecContainer>.resSec>a.imgSec>img {
+    max-width: 100%;
+    height: auto
+}
+div.resSecContainer > .resSec{
+    cursor:pointer;
+}
+div.resSecContainer > .resSec > a.imgSec > img.imgSecHome {
+    position: absolute;
+    width: 1270px;
+    height: 1232px;
+    max-width: none;
+}
+div.resSecContainer > .resSec > a.imgSec:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 5px 5px 8px -3px rgba(51, 51, 51, 0.87);
+    -moz-box-shadow: inset 5px 5px 8px -3px rgba(51, 51, 51, 0.87);
+    box-shadow: inset 5px 5px 8px -3px rgba(51, 51, 51, 0.87);
+}
+div.resSecContainer > .resSec > a:first-child + a {
+    margin-top: 5px;
+    display: inline-block;
+    color: #f18000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+h1.nomargin a{
+   color: black;
+}
